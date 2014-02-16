@@ -1,13 +1,15 @@
 #!/bin/bash
 
 # notes folder, for note creation and limiting searches
-NOTESDIR="$HOME/Dropbox/nvALT2.2"
+NOTESDIR="$HOME/Dropbox/txt/qq"
+
+
 # extension used for your notes
-NOTESEXT="md"
+NOTESEXT="txt"
 # the prefix you use to separate "Question" notes
-NOTESPRE="??"
+NOTESPRE="qq"
 # editor command to use for modifying answers
-EDITOR="subl"
+EDITOR="bbedit"
 
 NOTESDIR=`echo $NOTESDIR|sed -e '/\/$/! s/$/\//'`
 
