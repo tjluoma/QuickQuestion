@@ -42,9 +42,9 @@ then
     QUESTION=$2
     ANSWER="${NOTESDIR}${NOTESPRE} ${QUESTION}.${NOTESEXT}"
 
-	[[ ! -e "$ANSWER" ]] && touch "$ANSWER" && echo "Created empty $ANSWER to be filled in now"
+	[[ ! -e "${ANSWER}" ]] && touch "${ANSWER}" && echo "Created empty $ANSWER to be filled in now"
 
-	$EDITOR "$ANSWER"
+	${EDITOR} "$ANSWER"
 
   elif [ $# == 1 ]; then
     echo -n "Question: "
